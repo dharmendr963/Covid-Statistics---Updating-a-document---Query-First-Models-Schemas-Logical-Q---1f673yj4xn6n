@@ -213,4 +213,5 @@ const data = [
     }
 ]
 // console.log(data)
+db.myCollection.find({ $and: [{ age: { $gte: 18 } }, { age: { $lte: 30 } }] });
 exports.data = data;
